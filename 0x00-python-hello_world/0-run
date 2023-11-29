@@ -1,14 +1,2 @@
 #!/bin/bash
-
-# Check if the $PYFILE environment variable is set
-if [ -z "$PYFILE" ]; then
-	echo "Error: Environment varaibale \$PYFILE is
-	not set."
-	exit 1
-fi
-
-# Get the directory of the script
-DIR=$(dirname "$0")
-
-# Run the Python script
-python3 "$DIR/$PYFILE"
+python3 $PYFILE
