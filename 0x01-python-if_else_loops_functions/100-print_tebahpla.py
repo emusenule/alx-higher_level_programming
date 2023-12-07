@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
-for i in range(25, -1, -1):
-    print(chr(ord('z') - i), end='')
-    print(chr(ord('A') + i), end='')
+for i in range(122, 96, -1):
+    if i % 2:
+        i -= 32
+    print(chr(i), end="")
