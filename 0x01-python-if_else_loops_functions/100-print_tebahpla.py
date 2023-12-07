@@ -2,5 +2,5 @@
 
 for i in range(122, 96, -1):
     if i % 2:
-        i = - 32
-    print("{:c}".format(i), end='')
+        i -= 32
+    print(chr(i), end='')
